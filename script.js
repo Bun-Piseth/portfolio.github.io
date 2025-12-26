@@ -72,4 +72,5 @@
 
         // Add current year to copyright
         document.querySelector('.copyright p').innerHTML = 
-            `&copy; ${new Date().getFullYear()} Alex Johnson. All rights reserved.`;
+
+            `&copy; ${new Date().getFullYear()} Piseth Bun. All rights reserved.`;
