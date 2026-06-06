@@ -69,12 +69,9 @@
         if (aboutSection) {
             observer.observe(aboutSection);
         }
-
-        // Show scroll to top button when scrolling down
-        // Scroll To Top Button
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-// Show button when scrolling down
+// Show button when user scrolls down
 window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
         scrollTopBtn.style.display = "block";
@@ -83,7 +80,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-// Scroll to top when clicked
+// Scroll to top when button is clicked
 scrollTopBtn.addEventListener("click", () => {
     window.scrollTo({
         top: 0,
