@@ -70,7 +70,29 @@
             observer.observe(aboutSection);
         }
 
+        // Show scroll to top button when scrolling down
+        // Scroll To Top Button
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+// Show button when scrolling down
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+});
+
+// Scroll to top when clicked
+scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
         // Add current year to copyright
         document.querySelector('.copyright p').innerHTML = 
 
             `&copy; ${new Date().getFullYear()} Piseth Bun. All rights reserved.`;
+
